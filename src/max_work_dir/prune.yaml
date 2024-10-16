@@ -2,8 +2,8 @@ task: detect
 mode: train
 model: null #yolov8s.pt
 data: /home/nikitamarkov/deepschool/hackathon/data/dataset.yaml
-epochs: 1
-patience: 0
+epochs: 100
+patience: 5
 batch: 16
 imgsz: 640
 save: true
