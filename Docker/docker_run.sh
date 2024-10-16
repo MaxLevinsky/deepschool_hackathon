@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-read -r -p "dataset yaml dir, a directoru path to the dataset.yaml: " dataset_yaml
+read -r -p "dataset yaml dir, a directoyu path to the dataset.yaml / train / val / test : " dataset_yaml
 
 read -r -p "Output dir: " output_dir
 
