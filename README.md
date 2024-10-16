@@ -1,6 +1,6 @@
 # deepschool_hackathon
 
-1. git clone 
+1. git clone https://github.com/MaxLevinsky/deepschool_hackathon.git
 2. cd deepschool_hackathon
 3. sudo bash Docker/docker_build.sh
 4. sudo Docker/docker_run.sh
