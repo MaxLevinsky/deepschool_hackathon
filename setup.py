@@ -7,6 +7,7 @@ setup(
     version="1.0.0",
     packages=[''],
     package_dir={'': 'src/max_work_dir'},
+    package_data={"": ["config/*.yaml"]},
     install_requires=[
         'ultralytics==8.3.0',
         'torch_pruning',

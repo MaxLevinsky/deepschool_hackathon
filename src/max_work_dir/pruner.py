@@ -6,7 +6,7 @@ import torch
 
 def run_pruner(dataset_yaml_path: str, model_path: str, output_path: str):
     cfg = {'data': os.path.join(dataset_yaml_path, 'dataset.yaml'), 
-           'cfg': os.path.join(os.path.dirname(__file__), 'prune.yaml')}
+           'cfg': os.path.join(os.path.dirname(__file__), 'config/prune.yaml')}
     prune(
         model=YOLO(os.path.join(model_path, 'best.pt')),
         # dataset_dir='/home/nikitamarkov/deepschool/hackathon/data',

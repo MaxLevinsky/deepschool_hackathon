@@ -9,7 +9,7 @@ read -r -p "model path, a directory path to the .pt model: " model_path
 
 
 
-docker run -it --rm --gpus 0 \
+docker run -it --rm --gpus 0 --shm-size '8G' \
 	--mount type=bind,source=${dataset_yaml},target=/pruner/dataset_yaml \
 	--mount type=bind,source=${output_dir},target=/pruner/output \
 	--mount type=bind,source=${model_path},target=/pruner/models \
