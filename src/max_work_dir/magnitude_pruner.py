@@ -130,4 +130,5 @@ def prune(
 
     # Save onnx
     if save_onnx:
-        model.export(format="onnx", dynamic=True, simplify=False)
+        saved_model = YOLO(os.path.join(output_dir, 'magnitude_spruned_model.pt'))
+        saved_model.export(format="onnx", dynamic=True, simplify=False)
